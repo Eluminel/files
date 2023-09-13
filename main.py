@@ -5,7 +5,6 @@ cook_book = {}
 for dish in dishes:
     item = dish.split("\n")
     name, *ingredients = item
-# переделать
     _, *ingredients = ingredients
     cook_book[name] = []
     for ingredient in ingredients:
@@ -19,9 +18,9 @@ for dish in dishes:
         )
 print(cook_book)
 
-# def get_shop_list_by_dishes(dishes, person_count):
-#     dishes = cook_book.keys()
-#     shop_list = {}
-#     for dishes, ingredients in cook_book.items():
-#         a = ingredients[1] * person_count
-#     shop_list =
+def get_shop_list_by_dishes(dishes, person_count):
+    dishes = cook_book.keys()
+    shop_list = {}
+    for dishes, ingredients in cook_book.items():
+        a = ingredients[1] * person_count
+    shop_list =
